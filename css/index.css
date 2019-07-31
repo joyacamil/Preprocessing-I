@@ -128,6 +128,9 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+#regularText {
+  font-family: 'Montserrat', sans-serif;
+}
 * {
   box-sizing: border-box;
 }
@@ -141,12 +144,13 @@ body {
 .container {
   margin: auto;
   background-color: #0F0708;
+  color: white;
 }
 .container .header-img {
   width: 100vw;
   height: 100vh;
 }
-.container nav {
+.container header nav {
   margin: 4% 0;
   margin-left: 50%;
   display: flex;
@@ -154,15 +158,46 @@ body {
   width: 40%;
   font-size: 1.6rem;
 }
-.container nav a {
+.container header nav a {
   text-decoration: none;
   color: white;
 }
-.container p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: white;
+.container header h1 {
   text-align: center;
+  font-size: 3rem;
+}
+.container .intro {
+  background: gainsboro;
   width: 45%;
   margin: 3% auto;
+}
+.container .intro p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+.container .skills-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.container .skills-section .skills {
+  width: 49%;
+}
+.container .skills-section .skills h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2% 45%;
+}
+.container .skills-section .skills ul {
+  font-size: 1.6rem;
+  margin: 3% 0;
+  margin-left: 45%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
+.container .skills-section img {
+  width: 49%;
 }
