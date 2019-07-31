@@ -128,10 +128,6 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-#fullscreen {
-  width: 100vw;
-  height: 100vh;
-}
 * {
   box-sizing: border-box;
 }
@@ -144,16 +140,29 @@ body {
 }
 .container {
   margin: auto;
+  background-color: #0F0708;
 }
 .container .header-img {
   width: 100vw;
   height: 100vh;
 }
 .container nav {
+  margin: 4% 0;
+  margin-left: 50%;
   display: flex;
-  flex-flow: row nowrap;
-  align-content: flex-end;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
+  font-size: 1.6rem;
+}
+.container nav a {
+  text-decoration: none;
+  color: white;
+}
+.container p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 45%;
+  margin: 3% auto;
 }

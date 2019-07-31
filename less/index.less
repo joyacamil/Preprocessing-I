@@ -51,14 +51,6 @@ table {
 
 
 /* Set every element's box-sizing to border-box */
-@width: 100vw;
-@height: 100vh;
-
-.fullscreen  {
-  @height;
-  @width;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -74,24 +66,34 @@ html, body {
 
 .container {
   margin: auto;
+  background-color: #0F0708;
 
   .header-img {
-    .fullscreen();
+    width: 100vw;
+    height: 100vh;
   }
 
   nav {
+    margin: 4% 0;
+    margin-left: 50%;
     display: flex;
-    align-content: space-between;
     justify-content: space-between;
-    width: 50%;
-    margin-left: 10%;
+    width: 40%;
     font-size: 1.6rem;
     
     a {
       text-decoration: none;
-      
-      
+      color: white;
     }
   }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    width: 45%;
+    margin: 3% auto;
+  }
+
 }
 
