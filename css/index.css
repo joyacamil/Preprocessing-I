@@ -142,21 +142,21 @@ body {
   height: 100%;
 }
 .container {
-  margin: auto;
-  background-color: #0F0708;
+  margin: 0% 0%;
+  background-color: black;
   color: white;
 }
-.container .header-img {
-  width: 100vw;
-  height: 100vh;
+.container header .header-img {
+  width: 100%;
+  height: 100%;
 }
 .container header nav {
-  margin: 4% 0;
-  margin-left: 50%;
+  margin: 5% 0;
+  margin-left: 45%;
   display: flex;
   justify-content: space-between;
-  width: 40%;
-  font-size: 1.6rem;
+  width: 50%;
+  font-size: 3rem;
 }
 .container header nav a {
   text-decoration: none;
@@ -164,12 +164,24 @@ body {
 }
 .container header h1 {
   text-align: center;
-  font-size: 3rem;
+  margin: 5% 0;
+  font-size: 5rem;
+  color: red;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #520404, 0 0 30px #520404, 0 0 40px #520404, 0 0 50px #520404, 0 0 60px #520404, 0 0 70px #520404;
+  }
 }
 .container .intro {
-  background: gainsboro;
+  background: white;
   width: 45%;
   margin: 3% auto;
+  padding: 1% 3%;
 }
 .container .intro p {
   font-family: 'Montserrat', sans-serif;
@@ -178,26 +190,24 @@ body {
   color: black;
   text-align: center;
 }
-.container .skills-section {
+.container .skills-section h3 {
+  font-size: 3rem;
+  margin: 4% 45%;
+  color: red;
+}
+.container .skills-section .skills {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-}
-.container .skills-section .skills {
-  width: 49%;
-}
-.container .skills-section .skills h3 {
-  font-size: 3rem;
-  text-align: center;
-  margin: 2% 45%;
+  align-content: space-around;
 }
 .container .skills-section .skills ul {
+  text-align: center;
+  width: 45%;
   font-size: 1.6rem;
-  margin: 3% 0;
-  margin-left: 45%;
   font-family: 'Montserrat', sans-serif;
   line-height: 2;
 }
 .container .skills-section img {
-  width: 49%;
+  width: 45%;
 }
