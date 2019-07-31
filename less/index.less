@@ -20,8 +20,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+  font-size: 100%;
+	font: inherit; 
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  font-family: 'Lacquer', sans-serif;
   line-height: 1;
-  background-color: red;
 }
 ol, ul {
 	list-style: none;
@@ -49,12 +49,49 @@ table {
 	border-spacing: 0;
 }
 
+
 /* Set every element's box-sizing to border-box */
+@width: 100vw;
+@height: 100vh;
+
+.fullscreen  {
+  @height;
+  @width;
+}
+
 * {
     box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
+}
+
+
+.container {
+  margin: auto;
+
+  .header-img {
+    .fullscreen();
+  }
+
+  nav {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 10%;
+    font-size: 1.6rem;
+    
+    a {
+      text-decoration: none;
+      
+      
+    }
+  }
 }
 
