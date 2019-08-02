@@ -273,7 +273,9 @@ body {
       flex-flow: row nowrap;
       justify-content: space-around;
 
-
+      @media (max-width:500px) {
+        flex-flow: column wrap;
+      }
 
       .type {
         width: 35%;
@@ -314,6 +316,10 @@ body {
       justify-content: space-around;
       font-size: 1.8rem;
       vertical-align: center;
+
+      @media (max-width:500px) {
+        flex-flow: column wrap;
+      }
     }
 
   }

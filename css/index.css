@@ -270,6 +270,11 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .container .kills-section .kills {
+    flex-flow: column wrap;
+  }
+}
 .container .kills-section .kills .type {
   width: 35%;
   color: white;
@@ -301,4 +306,9 @@ body {
   justify-content: space-around;
   font-size: 1.8rem;
   vertical-align: center;
+}
+@media (max-width: 500px) {
+  .container footer .info {
+    flex-flow: column wrap;
+  }
 }
